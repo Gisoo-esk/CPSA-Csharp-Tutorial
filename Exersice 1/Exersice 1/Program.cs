@@ -18,6 +18,7 @@ namespace Exersice_1
         // A dictionary 
         static void Main(string[] args)
         {
+            Dict.Add("name",number);
             
             // Simple Contact Manager
             // Use a Simple Dictionary Based DataBase
