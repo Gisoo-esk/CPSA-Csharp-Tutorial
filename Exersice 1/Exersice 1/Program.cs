@@ -8,11 +8,17 @@ namespace Exersice_1
 {
     internal class Program
     {
-        // Create your Data Base Here : 
+        Console.Write("enter a name: ");
+        String name = Console.Readline();
+        Console.writeline("enter a number: ");
+        Int number = Convert.ToInt32(Console.Readline());
+         Dictionary<String,int>dict = new Dictionary<String,int>;
+        
 
         // A dictionary 
         static void Main(string[] args)
         {
+            
             // Simple Contact Manager
             // Use a Simple Dictionary Based DataBase
             // The Data That Are Going to Save : contact, Contact number
