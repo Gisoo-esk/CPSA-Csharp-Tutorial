@@ -9,7 +9,7 @@ namespace Exersice_1
     internal class Program
     {
         // Create your Data Base Here : 
-        dictionary<string,string>dict=new dictionary<string,string>;
+        dictionary<string,string>dict=new dictionary<string,string>();
         // A dictionary 
         static void Main(string[] args)
         {
@@ -92,7 +92,7 @@ namespace Exersice_1
         static void displayContacts()
         {
             foreach(keyvaluepair<string,string>pair in dict){
-                cosole.writeline($"{pair.key},{pair.valie}");
+                console.writeline($"{pair.key},{pair.valie}");
             }
             // Show All The Contacts : 
         }
