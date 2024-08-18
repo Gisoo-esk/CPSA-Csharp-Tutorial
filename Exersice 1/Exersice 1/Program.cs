@@ -9,7 +9,7 @@ namespace Exersice_1
     internal class Program
     {
         // Create your Data Base Here : 
-
+        dictionary<string,string>dict=new dictionary<string,string>;
         // A dictionary 
         static void Main(string[] args)
         {
@@ -91,21 +91,35 @@ namespace Exersice_1
         }
         static void displayContacts()
         {
+            foreach(keyvaluepair<string,string>pair in dict){
+                cosole.writeline($"{pair.key},{pair.valie}");
+            }
             // Show All The Contacts : 
         }
 
         static void addContact(string name, string contact)
         {
+            dict.Add(name,contact);
             // Add a New Contact
         }
 
         static void searchContact(string searchName)
         {
+            foreach(keyvaluepair<string,string>pair in dict){
+                if(searchName==pair.key){
+                    console.writeline($"{pair.value}");
+                }
+            }
             // Search a Contact via its Name
         }
 
         static void deleteContact(string fullName)
         {
+            foreach(keyvaluepair<string,string>pair in dict){
+                if(fullName==pair.key){
+                    dict.remove(pair.key);
+                }
+            }
             // Delete a Contact Via its name
         }
     }
